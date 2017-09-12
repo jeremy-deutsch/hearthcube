@@ -5,54 +5,25 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import ListGroup from 'react-bootstrap/lib/ListGroup';
 import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
+import axios from 'axios';
 
-const cardJSON = {
-  "Common": {
-    "River Crocolisk": {"default": 1},
-    "Magma Rager": {"default": 1},
-    "Wisp": {"default": 1},
-    "Stonetusk Boar": {"default": 1},
-    "Chillwind Yeti": {"default": 1},
-    "Flamestrike": {"Mage": 1},
-    "Boulderfist Ogre": {"default": 0.75}
-  },
-  "Rare": {
-    "Alarm-O-Bot": {"default": 1},
-    "Abomination": {"default": 1},
-    "Coldlight Oracle": {"default": 1},
-    "Crazed Alchemist": {"default": 1},
-    "Defender of Argus": {"default": 0.5},
-  },
-  "Epic": {
-    "Mountain Giant": {"default": 1},
-    "Doomsayer": {"default": 1},
-    "Faceless Manipulator": {"default": 1},
-    "Blood Knight": {"default": 1},
-  },
-  "Legendary": {
-    "Ragnaros the Firelord": {"default": 1},
-    "Alexstrasza": {"default": 1},
-    "Baron Geddon": {"default": 1},
-    "Nat Pagle": {"default": 1.5},
-    "Bloodmage Thalnos": {"default": 1},
-  }
-}
+const twoPerDeckLimit = true;
 
 class CardOption extends Component {
 
   onClick() {
-    const {cardName, addToDeck, loadNewThree} = this.props;
+    const {cardData, addToDeck, loadNewThree} = this.props;
     
-    addToDeck(cardName);
+    addToDeck(cardData);
     loadNewThree();
   }
 
   render() {
-    const {cardName, onClick} = this.props;
+    const {cardData, onClick} = this.props;
 
     return (
       <div onClick={() => onClick()}>
-        {cardName}
+        {cardData.name}
       </div>
     );
   }
@@ -64,11 +35,11 @@ class CardSelector extends Component {
 
     return (
       <div>
-      {currentOptions.length > 0 ? 
+      {currentOptions.length > 0 && 
       <Row>
         <Col md={4}>
           <CardOption 
-            cardName={currentOptions[0]}
+            cardData={currentOptions[0]}
             {...cardOptionProps} 
             onClick={() => {
               addToDeck(currentOptions[0]);
@@ -78,7 +49,7 @@ class CardSelector extends Component {
         </Col>
         <Col md={4}>
           <CardOption 
-            cardName={currentOptions[1]}
+            cardData={currentOptions[1]}
             {...cardOptionProps} 
             onClick={() => {
               addToDeck(currentOptions[1]);
@@ -88,7 +59,7 @@ class CardSelector extends Component {
         </Col>
         <Col md={4}>
             <CardOption 
-              cardName={currentOptions[2]}
+              cardData={currentOptions[2]}
               {...cardOptionProps} 
               onClick={() => {
                 addToDeck(currentOptions[2]);
@@ -97,8 +68,6 @@ class CardSelector extends Component {
             />
         </Col>
       </Row>
-      :
-      <div></div>
       }
       </div>
     );
@@ -125,43 +94,85 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      step: "start",
       started: false,
       thinking: false,
       decklistCards: [],
       currentOptions: []
     };
+    this.lottery = {
+      COMMON: [],
+      RARE: [],
+      EPIC: [],
+      LEGENDARY: []
+    };
+    this.allCards = {};
+    this.decklistDbfIds = {};
   }
 
-  addToDeck(cardName) {
-    this.setState(
-      {decklistCards: this.state.decklistCards.concat(cardName)}
-    );
+  addToDeck(cardData) {
+    if (!(cardData.dbfId in this.decklistDbfIds)) {
+      this.decklistDbfIds[cardData.dbfId] = 1;
+    } else {
+      this.decklistDbfIds[cardData.dbfId]++;
+    }
+    this.setState({
+      decklistCards: this.state.decklistCards.concat(cardData.name)
+    });
   }
 
-  getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+
+
+  fillLottery(heroClass) {
+    axios.get('/card-json/cards.cube.' + heroClass + '.json')
+      .then(response => {
+        this.allCards = response.data;
+        // console.log(response.data);
+        for (let dbfId in response.data) {
+          const ticketsToAdd = Math.floor(response.data[dbfId].frequency * 20);
+          const rarity = response.data[dbfId].rarity;
+          for (let i = 0; i < ticketsToAdd; i++) {
+            this.lottery[rarity].push(dbfId);
+          }
+        }
+        // console.log(this.lottery);
+        for (let rarity in this.lottery) {
+          shuffle(this.lottery[rarity]);
+        }
+        this.setState({step: "cards"});
+        this.loadNewThree();
+      })
+      .catch(error => {
+        console.error("Could not retrieve the " + heroClass + " cards: " + error);
+      });
   }
 
   loadNewThree() {
-    let newOptions = [];
     this.setState({currentOptions: []});
+    let newOptions = [];
 
-    
-    // if (this.state.decklistCards.length % 2 !== 0) {
-    //   newOptions =  [
-    //     "Magma Rager",
-    //     "River Crocolisk",
-    //     "Wisp"
-    //   ];
-    // } else {
-    //   newOptions =  [
-    //     "Dr. Boom",
-    //     "Leeroy Jenkins",
-    //     "Alarm-O-Bot"
-    //   ];
-    // }
+    let rarityRand = Math.random();
+    let rarity = "";
+    if (rarityRand < 0.5) {
+      rarity = "COMMON";
+    } else if (rarityRand < 0.75) {
+      rarity = "RARE";
+    } else if (rarityRand < 0.93) {
+      rarity = "EPIC";
+    } else {
+      rarity = "LEGENDARY";
+    }
+
+    while (newOptions.length < 3) {
+      let possibleOption = this.allCards[this.lottery[rarity].pop()];
+      if (!(possibleOption in newOptions) && 
+        (!(possibleOption.dbfId in this.decklistDbfIds) || 
+        this.decklistDbfIds[possibleOption.dbfId] < 2 || 
+        !twoPerDeckLimit)) {
+        newOptions.push(possibleOption);
+      }
+    }
+
     this.setState({
       thinking: false,
       currentOptions: newOptions
@@ -169,39 +180,66 @@ class App extends Component {
   }
 
   render() {
-    if (!this.state.started) {
-      return (
-        <button
-          onClick={() => {
-            this.setState({started: true});
-            this.loadNewThree();
-          }}
-        >
-          Start
-        </button>
-      );
-    } else {
-      return (
-        <div className="App">
-          {this.state.decklistCards.length < 30 ?
-          <CardSelector 
-            currentOptions={this.state.currentOptions}
-            addToDeck = {name => this.addToDeck(name)}
-            loadNewThree = {() => this.loadNewThree()}
-          />
-          :
+    switch(this.state.step) {
+      case "start": {
+        return (
+          <button
+            onClick={() => {
+              {/* this.setState({step: "hero"}); */}
+              this.fillLottery("priest");
+            }}
+          >
+            Start
+          </button>
+        );
+      }
+      case "hero": {
+        return (
           <div>
-            Congrats on your deck!
-            <button>Copy Decklist</button>
-            <button>Restart</button>
+            {/* <HeroSelector
+              chooseClass={(className) => this.fillLottery(className)}
+            /> */}
           </div>
-          }
-          <Decklist 
-            decklistCards={this.state.decklistCards}
-          />
-        </div>
-      );
+        );
+      }
+      case "cards": {
+        return (
+          <div className="App">
+            {this.state.decklistCards.length < 30 ?
+            <CardSelector 
+              currentOptions={this.state.currentOptions}
+              addToDeck={(name, dbfId) => this.addToDeck(name, dbfId)}
+              loadNewThree={() => this.loadNewThree()}
+            />
+            :
+            <div>
+              Congrats on your deck!
+              <button>Copy Decklist</button>
+              <button>Restart</button>
+            </div>
+            }
+            <Decklist 
+              decklistCards={this.state.decklistCards}
+            />
+          </div>
+        );
+      }
     }
+  }
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
+function shuffle (array) {
+  for (let i = array.length - 1; i > 0; i -= 1) {
+    let j = Math.floor(Math.random() * (i + 1))
+    let temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
   }
 }
 
