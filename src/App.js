@@ -6,7 +6,8 @@ import Col from 'react-bootstrap/lib/Col';
 import ListGroup from 'react-bootstrap/lib/ListGroup';
 import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 import axios from 'axios';
-import {encode, decode} from "deckstrings";
+import {encode, decode} from "deckstrings"; // encode doesn't work without importing decode, for some reason
+import ClipboardButton from 'react-clipboard.js';
 
 const twoPerDeckLimit = true;
 
@@ -59,31 +60,31 @@ class HeroSelector extends Component {
       {currentOptions.length > 0 && 
       <Row>
         <Col md={4}>
-          <div 
+          <a href="#" 
             onClick={() => {
               chooseHero(currentOptions[0]);
             }}
           >
             {currentOptions[0].hearthClass}
-          </div>
+          </a>
         </Col>
         <Col md={4}>
-          <div 
+          <a href="#" 
             onClick={() => {
               chooseHero(currentOptions[1]);
             }}
           >
             {currentOptions[1].hearthClass}
-          </div>
+          </a>
         </Col>
         <Col md={4}>
-          <div 
+          <a href="#" 
             onClick={() => {
               chooseHero(currentOptions[2]);
             }}
           >
             {currentOptions[2].hearthClass}
-          </div>
+          </a>
         </Col>
       </Row>
       }
@@ -105,10 +106,10 @@ class CardOption extends Component {
     const {cardData, onClick} = this.props;
 
     return (
-      <div onClick={() => onClick()}>
+      <a href="#" onClick={() => onClick()}>
         <img src={cardData.url} alt={cardData.name}/>
-        {cardData.name}
-      </div>
+        <p>{cardData.name}</p>
+      </a>
     );
   }
 }
@@ -194,6 +195,7 @@ class App extends Component {
     };
     this.allCards = {}; // All possible cards to choose from, with DbfId as a key.
     this.decklistDbfIds = {}; // Key-value pairs of DbfId to number of copies.
+    this.deckSize = 0; // Track deck size so we don't have to rely on state, which updates asynchronously
   }
 
   loadThreeHeroes() {
@@ -280,6 +282,10 @@ class App extends Component {
     this.setState({
       decklistCards: this.state.decklistCards.concat(cardData.name)
     });
+    this.deckSize++;
+    if (this.deckSize === 30) {
+      this.generateDeckstring();
+    }
   }
 
   generateDeckstring() {
@@ -331,16 +337,10 @@ class App extends Component {
             :
             <div>
               Congrats on your deck!
-              <button onClick={() => this.generateDeckstring()}>
-                Copy Decklist
-              </button>
+              <ClipboardButton data-clipboard-text={this.state.finalDeckstring}>
+                Copy deck to clipboard
+              </ClipboardButton>
               <button>Restart</button>
-              {this.state.finalDeckstring &&
-                <div>
-                  Copy the following code to your clipboard: 
-                  {this.state.finalDeckstring}
-                </div>
-              }
             </div>
             }
             <Decklist 
@@ -349,14 +349,13 @@ class App extends Component {
           </div>
         );
       }
+      default: {
+        return (
+          <div>default case - error occured</div>
+        );
+      }
     }
   }
-}
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
 function shuffleArray (array) {
