@@ -106,6 +106,7 @@ class CardOption extends Component {
 
     return (
       <div onClick={() => onClick()}>
+        <img src={cardData.url} alt={cardData.name}/>
         {cardData.name}
       </div>
     );

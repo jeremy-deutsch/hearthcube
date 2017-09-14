@@ -25,6 +25,7 @@ for cardClass in ['PRIEST', 'MAGE', 'WARLOCK', 'WARRIOR', 'HUNTER', 'PALADIN', '
                 new_card['frequency'] = card['frequency'][cardClass]
             else:
                 new_card['frequency'] = card['frequency']['DEFAULT']
+            new_card['url'] = card['url']
             cube_class[new_card['dbfId']] = new_card
     # Write each class' cube to another file
     cube_class_file = open('cards.cube.' + cardClass.lower() + '.json', 'w')

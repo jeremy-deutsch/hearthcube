@@ -3,6 +3,20 @@ import json
 ## A script that takes the JSON of every collectible Hearthstone card, and turns it into a useful format
 ## for a HearthCube master JSON file.
 
+# Step 1: Load all the images
+images_file = open('images.json', 'r')
+images_old = json.load(images_file)
+images_file.close()
+
+images_master = {}
+
+# Parse all the images, and load their URLs to add to the master
+for image in images_old:
+    images_master[image['id']] = image['url']
+
+# I hope python has a good garbage collector!
+images_old = []
+
 # First, load the HS card master set into memory.
 all_cards_file = open('cards.collectible.json', 'r')
 all_cards = json.load(all_cards_file)
@@ -26,6 +40,7 @@ for card in all_cards:
         else:
             new_card['frequency'] = {}
             new_card['frequency'][new_card['cardClass']] = 1.0
+        new_card['url'] = images_master[card['id']]
         cube_master[new_card['dbfId']] = new_card
 
 # Create a new JSON file, with indents for easy reading
