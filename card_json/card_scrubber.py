@@ -12,20 +12,21 @@ cube_master = {}
 
 # Parse all the cards, and add the fields we care about to our new set.
 for card in all_cards:
-    new_card = {}
-    new_card['dbfId'] = card['dbfId']
-    new_card['name'] = card['name']
-    if card['rarity'] == 'FREE':
-        new_card['rarity'] = 'COMMON'
-    else:
-        new_card['rarity'] = card['rarity']
-    new_card['cardClass'] = card['cardClass']
-    if new_card['cardClass'] == 'NEUTRAL':
-        new_card['frequency'] = {'DEFAULT': 1.0}
-    else:
-        new_card['frequency'] = {}
-        new_card['frequency'][new_card['cardClass']] = 1.0
-    cube_master[new_card['dbfId']] = new_card
+    if (card['type'] != 'HERO' or card['set'] == 'ICECROWN'):
+        new_card = {}
+        new_card['dbfId'] = card['dbfId']
+        new_card['name'] = card['name']
+        if card['rarity'] == 'FREE':
+            new_card['rarity'] = 'COMMON'
+        else:
+            new_card['rarity'] = card['rarity']
+        new_card['cardClass'] = card['cardClass']
+        if new_card['cardClass'] == 'NEUTRAL':
+            new_card['frequency'] = {'DEFAULT': 0.75}
+        else:
+            new_card['frequency'] = {}
+            new_card['frequency'][new_card['cardClass']] = 1.0
+        cube_master[new_card['dbfId']] = new_card
 
 # Create a new JSON file, with indents for easy reading
 cube_master_file = open('cards.cube.all.json', 'w')

@@ -9,6 +9,88 @@ import axios from 'axios';
 
 const twoPerDeckLimit = true;
 
+const heroes = [
+  {
+    dbfId: 893,
+    hearthClass: "Warlock"
+  },
+  {
+    dbfId: 930,
+    hearthClass: "Rogue"
+  },
+  {
+    dbfId: 274,
+    hearthClass: "Druid"
+  },
+  {
+    dbfId: 813,
+    hearthClass: "Priest"
+  },
+  {
+    dbfId: 7,
+    hearthClass: "Warrior"
+  },
+  {
+    dbfId: 671,
+    hearthClass: "Paladin"
+  },
+  {
+    dbfId: 1066,
+    hearthClass: "Shaman"
+  },
+  {
+    dbfId: 637,
+    hearthClass: "Mage"
+  },
+  {
+    dbfId: 31,
+    hearthClass: "Hunter"
+  }
+];
+
+class HeroSelector extends Component {
+
+  render() {
+    const {currentOptions, fillLottery} = this.props;
+
+    return (
+      <div>
+      {currentOptions.length > 0 && 
+      <Row>
+        <Col md={4}>
+          <div 
+            onClick={() => {
+              fillLottery(currentOptions[0].hearthClass);
+            }}
+          >
+            {currentOptions[0].hearthClass}
+          </div>
+        </Col>
+        <Col md={4}>
+          <div 
+            onClick={() => {
+              fillLottery(currentOptions[1].hearthClass);
+            }}
+          >
+            {currentOptions[1].hearthClass}
+          </div>
+        </Col>
+        <Col md={4}>
+          <div 
+            onClick={() => {
+              fillLottery(currentOptions[2].hearthClass);
+            }}
+          >
+            {currentOptions[2].hearthClass}
+          </div>
+        </Col>
+      </Row>
+      }
+      </div>
+    );
+  }
+}
+
 class CardOption extends Component {
 
   onClick() {
@@ -97,34 +179,37 @@ class App extends Component {
       step: "start",
       started: false,
       thinking: false,
+      heroClass: "",
       decklistCards: [],
       currentOptions: []
     };
+    this.heroDbfId = 0;
     this.lottery = {
       COMMON: [],
       RARE: [],
       EPIC: [],
       LEGENDARY: []
     };
-    this.allCards = {};
-    this.decklistDbfIds = {};
+    this.allCards = {}; // All possible cards to choose from, with DbfId as a key.
+    this.decklistDbfIds = {}; // Key-value pairs of DbfId to number of copies.
   }
 
-  addToDeck(cardData) {
-    if (!(cardData.dbfId in this.decklistDbfIds)) {
-      this.decklistDbfIds[cardData.dbfId] = 1;
-    } else {
-      this.decklistDbfIds[cardData.dbfId]++;
-    }
+  loadThreeHeroes() {
+    let heroList = heroes;
+    shuffleArray(heroList);
+
     this.setState({
-      decklistCards: this.state.decklistCards.concat(cardData.name)
+      currentOptions: heroList.slice(0, 3),
+      step: "hero"
     });
   }
 
-
-
   fillLottery(heroClass) {
-    axios.get('/card-json/cards.cube.' + heroClass + '.json')
+    this.setState({
+      currentOptions: [],
+      heroClass
+    });
+    axios.get('/card-json/cards.cube.' + heroClass.toLowerCase() + '.json')
       .then(response => {
         this.allCards = response.data;
         // console.log(response.data);
@@ -137,7 +222,7 @@ class App extends Component {
         }
         // console.log(this.lottery);
         for (let rarity in this.lottery) {
-          shuffle(this.lottery[rarity]);
+          shuffleArray(this.lottery[rarity]);
         }
         this.setState({step: "cards"});
         this.loadNewThree();
@@ -167,7 +252,7 @@ class App extends Component {
       let possibleOption = this.allCards[this.lottery[rarity].pop()];
       if (!(possibleOption in newOptions) && 
         (!(possibleOption.dbfId in this.decklistDbfIds) || 
-        this.decklistDbfIds[possibleOption.dbfId] < 2 || 
+        (rarity !== "LEGENDARY" && this.decklistDbfIds[possibleOption.dbfId] < 2) || 
         !twoPerDeckLimit)) {
         newOptions.push(possibleOption);
       }
@@ -179,14 +264,24 @@ class App extends Component {
     });
   }
 
+  addToDeck(cardData) {
+    if (!(cardData.dbfId in this.decklistDbfIds)) {
+      this.decklistDbfIds[cardData.dbfId] = 1;
+    } else {
+      this.decklistDbfIds[cardData.dbfId]++;
+    }
+    this.setState({
+      decklistCards: this.state.decklistCards.concat(cardData.name)
+    });
+  }
+
   render() {
     switch(this.state.step) {
       case "start": {
         return (
           <button
             onClick={() => {
-              {/* this.setState({step: "hero"}); */}
-              this.fillLottery("priest");
+              this.loadThreeHeroes();
             }}
           >
             Start
@@ -195,10 +290,11 @@ class App extends Component {
       }
       case "hero": {
         return (
-          <div>
-            {/* <HeroSelector
-              chooseClass={(className) => this.fillLottery(className)}
-            /> */}
+          <div className="App">
+            <HeroSelector
+              fillLottery={className => this.fillLottery(className)}
+              currentOptions={this.state.currentOptions}
+            />
           </div>
         );
       }
@@ -234,7 +330,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
-function shuffle (array) {
+function shuffleArray (array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
     let j = Math.floor(Math.random() * (i + 1))
     let temp = array[i]
