@@ -22,7 +22,7 @@ for card in all_cards:
             new_card['rarity'] = card['rarity']
         new_card['cardClass'] = card['cardClass']
         if new_card['cardClass'] == 'NEUTRAL':
-            new_card['frequency'] = {'DEFAULT': 0.75}
+            new_card['frequency'] = {'DEFAULT': 0.7}
         else:
             new_card['frequency'] = {}
             new_card['frequency'][new_card['cardClass']] = 1.0

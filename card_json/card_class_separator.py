@@ -19,7 +19,7 @@ for cardClass in ['PRIEST', 'MAGE', 'WARLOCK', 'WARRIOR', 'HUNTER', 'PALADIN', '
             new_card['dbfId'] = card['dbfId']
             new_card['name'] = card['name']
             new_card['rarity'] = card['rarity']
-            new_card['cardClass'] = card['cardClass']
+            # new_card['cardClass'] = card['cardClass']
             # In the class files, cards only have one frequency.
             if cardClass in card['frequency']:
                 new_card['frequency'] = card['frequency'][cardClass]

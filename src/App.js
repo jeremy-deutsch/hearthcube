@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/lib/Col';
 import ListGroup from 'react-bootstrap/lib/ListGroup';
 import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 import axios from 'axios';
+import {encode, decode} from "deckstrings";
 
 const twoPerDeckLimit = true;
 
@@ -51,7 +52,7 @@ const heroes = [
 class HeroSelector extends Component {
 
   render() {
-    const {currentOptions, fillLottery} = this.props;
+    const {currentOptions, chooseHero} = this.props;
 
     return (
       <div>
@@ -60,7 +61,7 @@ class HeroSelector extends Component {
         <Col md={4}>
           <div 
             onClick={() => {
-              fillLottery(currentOptions[0].hearthClass);
+              chooseHero(currentOptions[0]);
             }}
           >
             {currentOptions[0].hearthClass}
@@ -69,7 +70,7 @@ class HeroSelector extends Component {
         <Col md={4}>
           <div 
             onClick={() => {
-              fillLottery(currentOptions[1].hearthClass);
+              chooseHero(currentOptions[1]);
             }}
           >
             {currentOptions[1].hearthClass}
@@ -78,7 +79,7 @@ class HeroSelector extends Component {
         <Col md={4}>
           <div 
             onClick={() => {
-              fillLottery(currentOptions[2].hearthClass);
+              chooseHero(currentOptions[2]);
             }}
           >
             {currentOptions[2].hearthClass}
@@ -204,6 +205,11 @@ class App extends Component {
     });
   }
 
+  chooseHero(hero) {
+    this.heroDbfId = hero.dbfId;
+    this.fillLottery(hero.hearthClass);
+  }
+
   fillLottery(heroClass) {
     this.setState({
       currentOptions: [],
@@ -275,6 +281,20 @@ class App extends Component {
     });
   }
 
+  generateDeckstring() {
+    const cards = Object.entries(this.decklistDbfIds).map(entry => 
+      [parseInt(entry[0]), entry[1]]
+    );
+    const deck = {
+      cards,
+      heroes: [this.heroDbfId],
+      format: 1
+    }
+    console.log(deck);
+    const finalDeckstring = encode(deck);
+    this.setState({finalDeckstring});
+  }
+
   render() {
     switch(this.state.step) {
       case "start": {
@@ -292,7 +312,7 @@ class App extends Component {
         return (
           <div className="App">
             <HeroSelector
-              fillLottery={className => this.fillLottery(className)}
+              chooseHero={className => this.chooseHero(className)}
               currentOptions={this.state.currentOptions}
             />
           </div>
@@ -310,8 +330,16 @@ class App extends Component {
             :
             <div>
               Congrats on your deck!
-              <button>Copy Decklist</button>
+              <button onClick={() => this.generateDeckstring()}>
+                Copy Decklist
+              </button>
               <button>Restart</button>
+              {this.state.finalDeckstring &&
+                <div>
+                  Copy the following code to your clipboard: 
+                  {this.state.finalDeckstring}
+                </div>
+              }
             </div>
             }
             <Decklist 
