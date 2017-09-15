@@ -247,11 +247,30 @@ class App extends Component {
 
     let rarityRand = Math.random();
     let rarity = "";
-    if (rarityRand < 0.5) {
+    let commonChance, rareChance, epicChance, legendChance;
+    if (this.deckSize === 0) {
+      // console.log("Legend pick!");
+      commonChance = 0;
+      rareChance = 0;
+      epicChance = 0.5;
+      legendChance = 0.5;
+    } else if (this.deckSize === 9 || this.deckSize === 19 || this.deckSize === 29) {
+      // console.log("Rare pick!");
+      commonChance = 0;
+      rareChance = 0.4;
+      epicChance = 0.4;
+      legendChance = 0.2;
+    } else {
+      commonChance = 0.65;
+      rareChance = 0.22;
+      epicChance = 0.1;
+      legendChance = 0.03;
+    }
+    if (rarityRand < commonChance) {
       rarity = "COMMON";
-    } else if (rarityRand < 0.75) {
+    } else if (rarityRand < commonChance + rareChance) {
       rarity = "RARE";
-    } else if (rarityRand < 0.93) {
+    } else if (rarityRand < commonChance + rareChance + epicChance) {
       rarity = "EPIC";
     } else {
       rarity = "LEGENDARY";
@@ -328,7 +347,7 @@ class App extends Component {
       case "cards": {
         return (
           <div className="App">
-            {this.state.decklistCards.length < 30 ?
+            {this.deckSize < 30 ?
             <CardSelector 
               currentOptions={this.state.currentOptions}
               addToDeck={(name, dbfId) => this.addToDeck(name, dbfId)}

@@ -1,0 +1,1833 @@
+{
+ "HUNTER": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 42525,
+   "text": "<b>Secret:</b> When one of your minions is attacked, summon a 2/3\u00a0<b>Poisonous</b> Cobra.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_200.png",
+   "rarity": "RARE",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Venomstrike Trap"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42707,
+   "text": "<b>Battlecry:</b> <b>Discover</b> a copy of a minion in your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_415.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Stitched Tracker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43245,
+   "text": "[x]<b>Deathrattle:</b> Summon\na random friendly Beast\nthat died this game.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_825.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Abominable Bowman"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42648,
+   "text": "Deal $2 damage to a minion. If it survives, give it <b>Poisonous</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_049.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Toxic Arrow"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43398,
+   "text": "[x]<b>Battlecry:</b> Deal 2 damage\nto all enemy minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_828.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Deathstalker Rexxar"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42320,
+   "text": "<b>Deathrattle:</b>\nDeal 2 damage to all enemy minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_021.png",
+   "rarity": "RARE",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Exploding Bloatbat"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42563,
+   "text": "After you play a <b>Secret</b>,\nput a random Hunter <b>Secret</b> into the battlefield.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_204.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Professor Putricide"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42822,
+   "text": "Your <b>Deathrattle</b> cards cost\u00a0(2) less.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_243.png",
+   "rarity": "RARE",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Corpse Widow"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42711,
+   "text": "Can't be targeted by spells or Hero Powers.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_419.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Bearshark"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42652,
+   "text": "Trigger a friendly minion's <b>Deathrattle</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_052.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "HUNTER": 1.15
+   },
+   "cardClass": "HUNTER",
+   "name": "Play Dead"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "NAXX",
+   "frequency": {
+    "HUNTER": 1.0
+   },
+   "text": "<b>Deathrattle:</b> Add a random Beast card to your hand.",
+   "cardClass": "HUNTER",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/FP1_011.png",
+   "dbfId": 1860,
+   "name": "Webspinner"
+  }
+ ],
+ "WARRIOR": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 42630,
+   "text": "[x]Whenever this minion\nsurvives damage,\nsummon a random\n<b>Legendary</b> minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_405.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Rotface"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42700,
+   "text": "<b>Battlecry and Deathrattle:</b>\nDeal 1 damage to all minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_064.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Blood Razor"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42998,
+   "text": "Draw 2 weapons from your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_281.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Forge of Souls"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43423,
+   "text": "<b>Battlecry</b>: Equip a 4/3\u00a0Shadowmourne that also damages adjacent minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_834.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Scourgelord Garrosh"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42671,
+   "text": "[x]Whenever this minion\nsurvives damage,\nsummon a 2/2 Ghoul.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_408.png",
+   "rarity": "RARE",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Val'kyr Soulclaimer"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42766,
+   "text": "Shuffle a copy of your hand into your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_091.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Dead Man's Hand"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42810,
+   "text": "After you play a minion, deal 1 damage to it.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_238.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Animated Berserker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42698,
+   "text": "<b>Deathrattle:</b> If it's your opponent's turn,\ngain 6 Armor.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_062.png",
+   "rarity": "RARE",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Mountainfire Armor"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42392,
+   "text": "<b>Battlecry:</b> Gain +1/+1 for each damaged minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_450.png",
+   "rarity": "RARE",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Death Revenant"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43505,
+   "text": "Gain 10 Armor. Reduce the Cost of minions in your opponent's hand by (2).",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_837.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "WARRIOR": 1.15
+   },
+   "cardClass": "WARRIOR",
+   "name": "Bring It On!"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "frequency": {
+    "WARRIOR": 1.0
+   },
+   "text": "<b>Battlecry:</b> Deal 1 damage to a minion and give it +2\u00a0Attack.",
+   "cardClass": "WARRIOR",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/EX1_603.png",
+   "dbfId": 285,
+   "name": "Cruel Taskmaster"
+  }
+ ],
+ "WARLOCK": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 45321,
+   "text": "<b>Battlecry:</b> Destroy a friendly minion and gain\u00a0+2/+2.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_903.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Sanguine Reveler"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42670,
+   "text": "<b>Battlecry:</b> Remove\nthe top card of your opponent's deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_407.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Gnomeferatu"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42565,
+   "text": "Choose a friendly minion and give it to\u00a0your opponent.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_206.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Treachery"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42642,
+   "text": "Whenever this minion takes damage, discard a\u00a0random card.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_218.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Howlfiend"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43415,
+   "text": "<b>Battlecry:</b> Summon all friendly Demons that\u00a0died\u00a0this\u00a0game.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_831.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Bloodreaver Gul'dan"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42658,
+   "text": "<b>Lifesteal</b>\nDeal $2 damage\nto a minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_055.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Drain Soul"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43064,
+   "text": "[x]<b>Lifesteal</b>\nHas +1 Attack for each\ncard you've discarded\nthis game.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_841.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Blood-Queen Lana'thel"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42391,
+   "text": "Choose a friendly minion. Destroy it and a random enemy minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_469.png",
+   "rarity": "RARE",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Unwilling Sacrifice"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42743,
+   "text": "At the end of your turn, deal 1 damage to all enemy minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_075.png",
+   "rarity": "RARE",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Despicable Dreadlord"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42471,
+   "text": "Deal $1 damage to all minions. If any die, cast this again.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_041.png",
+   "rarity": "RARE",
+   "frequency": {
+    "WARLOCK": 1.15
+   },
+   "cardClass": "WARLOCK",
+   "name": "Defile"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "OG",
+   "frequency": {
+    "WARLOCK": 1.0
+   },
+   "text": "<b>Deathrattle:</b> Summon a 1/1 Shadowbeast.",
+   "cardClass": "WARLOCK",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/OG_241.png",
+   "dbfId": 38774,
+   "name": "Possessed Villager"
+  }
+ ],
+ "ROGUE": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 42801,
+   "text": "Throw your weapon at a minion. It deals its damage, then returns to\u00a0your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_233.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Doomerang"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42712,
+   "text": "<b>Deathrattle:</b> Add two 1/1 Skeletons to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_065.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Bone Baron"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42560,
+   "text": "Draw a card.\nIf it has <b>Deathrattle</b>, cast this again.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_201.png",
+   "rarity": "RARE",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Roll the Bones"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43031,
+   "text": "<b>Battlecry:</b> Replace spells in your hand with random spells <i>(from your opponent's class).</i>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_811.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Lilian Voss"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42819,
+   "text": "During your turn, your weapon doesn't lose Durability.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_240.png",
+   "rarity": "RARE",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Runeforge Haunter"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43392,
+   "text": "<b>Battlecry:</b> Gain <b>Stealth</b> until your next turn.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_827.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Valeera the Hollow"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45338,
+   "text": "<b>Battlecry:</b> Your hero is <b>Immune</b> this turn.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_850.png",
+   "rarity": "RARE",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Shadowblade"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42665,
+   "text": "Give your weapon <b>Lifesteal</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_221.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Leeching Poison"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43028,
+   "text": "<b>Combo:</b> Give a friendly minion <b>Poisonous</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_809.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Plague Scientist"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45975,
+   "text": "[x]<b>Combo:</b> Deal damage equal\nto the number of other cards\nyou've played this turn.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_910.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "ROGUE": 1.15
+   },
+   "cardClass": "ROGUE",
+   "name": "Spectral Pillager"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "KARA",
+   "frequency": {
+    "ROGUE": 1.0
+   },
+   "text": "<b>Deathrattle:</b> Add a 3/2 weapon to your hand.",
+   "cardClass": "ROGUE",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/KAR_094.png",
+   "dbfId": 39822,
+   "name": "Deadly Fork"
+  }
+ ],
+ "PALADIN": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 43406,
+   "text": "<b>Battlecry:</b> Equip a 5/3 <b>Lifesteal</b> weapon.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_829.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Uther of the Ebon Blade"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42735,
+   "text": "After a friendly minion loses <b>Divine Shield</b>, gain +1 Attack.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_071.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Light's Sorrow"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42462,
+   "text": "<b>Deathrattle:</b> If it's your opponent's turn, summon a 2/2 Ghoul.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_034.png",
+   "rarity": "RARE",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Arrogant Crusader"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42825,
+   "text": "Whenever your hero is healed, deal that much damage to a random enemy minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_245.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Blackguard"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42467,
+   "text": "<b>Taunt</b>\n<b>Divine Shield</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_038.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Righteous Protector"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42824,
+   "text": "Give a minion \"<b>Deathrattle:</b> Return this to life with 1 Health.\"",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_244.png",
+   "rarity": "RARE",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Desperate Stand"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42469,
+   "text": "Set a minion's Attack and Health to 3.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_039.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Dark Conviction"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43127,
+   "text": "<b>Charge</b>\n<b>Lifesteal</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_820.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Chillblade Champion"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45392,
+   "text": "<b>Divine Shield</b>\nAfter a friendly minion loses\u00a0<b>Divine Shield</b>, gain +2 Attack.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_858.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Bolvar, Fireblood"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42948,
+   "text": "<b>Battlecry:</b> Draw a <b>Divine\u00a0Shield</b> minion from your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_801.png",
+   "rarity": "RARE",
+   "frequency": {
+    "PALADIN": 1.15
+   },
+   "cardClass": "PALADIN",
+   "name": "Howling Commander"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "TGT",
+   "frequency": {
+    "PALADIN": 1.0
+   },
+   "text": "Give a minion\n+3 Attack and <b>Divine Shield</b>.",
+   "cardClass": "PALADIN",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/AT_074.png",
+   "dbfId": 2717,
+   "name": "Seal of Champions"
+  }
+ ],
+ "MAGE": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 43193,
+   "text": "Copy the lowest Cost minion in your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_823.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Simulacrum"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42754,
+   "text": "<b>Secret:</b> After your opponent plays a minion, add two copies of it to\u00a0your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_082.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Frozen Clone"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43419,
+   "text": "[x]<b>Battlecry:</b> Summon a\n3/6 Water Elemental.\nYour Elementals have\n<b>Lifesteal</b> this game.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_833.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Frost Lich Jaina"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42760,
+   "text": "Put one of each <b>Secret</b> from your deck into\nthe battlefield.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_086.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Glacial Mysteries"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42718,
+   "text": "<b>Battlecry:</b> Add a 'Mirror Image' spell to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_069.png",
+   "rarity": "RARE",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Ghastly Conjurer"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42756,
+   "text": "Your opponent's spells cost (1) more.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_083.png",
+   "rarity": "RARE",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Doomed Apprentice"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42836,
+   "text": "<b>Battlecry:</b> If an enemy is <b>Frozen</b>, draw a card.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_252.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Coldwraith"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43506,
+   "text": "<b>Battlecry:</b> Summon two 0/1 Frozen Champions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_838.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Sindragosa"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42716,
+   "text": "Your Hero Power also <b><b>Freeze</b>s</b> the target.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_068.png",
+   "rarity": "RARE",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Ice Walker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43502,
+   "text": "Deal $2 damage to a random enemy minion and <b>Freeze</b> it.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_836.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "MAGE": 1.15
+   },
+   "cardClass": "MAGE",
+   "name": "Breath of Sindragosa"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "CORE",
+   "frequency": {
+    "MAGE": 1.0
+   },
+   "text": "<b>Freeze</b> any character damaged by this minion.",
+   "cardClass": "MAGE",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/CS2_033.png",
+   "dbfId": 395,
+   "name": "Water Elemental"
+  }
+ ],
+ "NEUTRAL": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 45366,
+   "text": "<b>Deathrattle:</b> Add a random <b>Death Knight</b> card to your\u00a0hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_854.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Arfus"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42327,
+   "text": "<b>Battlecry:</b> Gain stats equal to your weapon's.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_018.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Phantom Freebooter"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42779,
+   "text": "<b>Battlecry:</b> Discard all weapons from your hand and gain their stats.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_096.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Furnacefire Colossus"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42780,
+   "text": "Whenever your weapon is destroyed, gain +1/+1.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_097.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Grave Shambler"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42784,
+   "text": "<b>Battlecry:</b> Destroy all\n1-Cost spells in both hands and decks.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_701.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Skulking Geist"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45341,
+   "text": "<b>Battlecry:</b> If your deck has\u00a0no 3-Cost cards, transform into a 3/3 copy of a minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_852.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Prince Taldaram"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42773,
+   "text": "<b>Battlecry:</b> Give a friendly minion +1 Attack.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_092.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Acherus Veteran"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42775,
+   "text": "<b>Battlecry:</b> Give a friendly minion <b>Spell Damage +1</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_093.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Tuskarr Fisherman"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42442,
+   "text": "At the end of your turn, give another random friendly minion +3 Attack.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_029.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Cobalt Scalebane"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42781,
+   "text": "[x]<b>Battlecry:</b> Add a random\n<b>Deathrattle</b> minion that died\nthis game to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_098.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Tomb Lurker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42818,
+   "text": "[x]<b>Taunt</b>\nAt the end of your turn,\nadd a random <b>Death Knight</b>\ncard to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_314.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "The Lich King"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42783,
+   "text": "Costs (0) if your hero was healed this turn.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_700.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Happy Ghoul"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 46103,
+   "text": "<b>Divine Shield</b>\n<b>Spell Damage +1</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_913.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Tainted Zealot"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45377,
+   "text": "<b>Battlecry:</b> <b>Freeze</b> your other minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_855.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Hyldnir Frostrider"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42439,
+   "text": "<b>Deathrattle:</b> Add a random Dragon to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_027.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Bone Drake"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45314,
+   "text": "Hero Powers are disabled.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_902.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Mindbreaker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 46102,
+   "text": "[x]<b>Battlecry:</b> Gain <b>Taunt</b> if your\ndeck has a <b>Taunt</b> minion.\nRepeat for <b>Divine Shield</b>,\n<b>Lifesteal</b>, <b>Windfury</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_912.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Corpsetaker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42714,
+   "text": "[x]<b>Deathrattle:</b> If it's your\nopponent's turn,\nsummon a 2/2 Ghoul.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_067.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Vryghoul"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42398,
+   "text": "Whenever this minion attacks, deal 2 damage to\u00a0the enemy hero.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_468.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Wretched Tiller"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42663,
+   "text": "<b>Lifesteal</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_220.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Deadscale Knight"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 46101,
+   "text": "Whenever you play a card, remove the top 3 cards of\u00a0your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_911.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Keening Banshee"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42909,
+   "text": "[x]<b>Battlecry:</b> Give a friendly\nminion \"<b>Deathrattle:</b>\n  Resummon this minion.\"",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_257.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Corpse Raiser"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45340,
+   "text": "<b>Battlecry:</b> If your deck has\u00a0no 2-Cost cards, give\u00a0all minions in your deck +1/+1.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_851.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Prince Keleseth"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45329,
+   "text": "<b>Lifesteal</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_905.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Bloodworm"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45307,
+   "text": "Whenever one of your other minions dies, summon a 2/2 Ghoul.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_900.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Necrotic Geist"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42395,
+   "text": "<b>Taunt</b>\n<b>Battlecry:</b> Summon a copy of this minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_466.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Saronite Chain Gang"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45309,
+   "text": "Your end of turn effects trigger twice.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_901.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Drakkari Enchanter"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42394,
+   "text": "<b>Battlecry:</b> Give a friendly minion <b>Immune</b> this turn.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_467.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Deathspeaker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45342,
+   "text": "<b>Battlecry:</b> If your deck has no 4-Cost cards, gain <b>Lifesteal</b> and <b>Taunt</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_853.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Prince Valanar"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45378,
+   "text": "<b>Spell Damage +2</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_856.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Spellweaver"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42338,
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_023.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Snowflipper Penguin"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42777,
+   "text": "<b>Battlecry:</b> Give a friendly minion +1/+1.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_094.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Fallen Sun Cleric"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42422,
+   "text": "[x]<b>Battlecry:</b> Summon a\n5/5 Skeleton.\n<b>Deathrattle:</b> Summon one\nfor your opponent.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_025.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Rattling Rascal"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42782,
+   "text": "<b>Deathrattle:</b> Deal 5 damage to your minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_099.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Ticking Abomination"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42790,
+   "text": "<b>Battlecry:</b> Give a friendly minion +4/+4 and <b>Taunt</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_705.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Bonemare"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42785,
+   "text": "<b>Deathrattle:</b> Add a random <b>Deathrattle</b> minion to your\u00a0hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_702.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Shallow Gravedigger"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43029,
+   "text": "<b>Battlecry:</b> Give a random <b>Lifesteal</b> minion in your hand +2/+2.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_810.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Deathaxe Punisher"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42438,
+   "text": "<b>Battlecry:</b> Summon two 1/1 Skeletons.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_026.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Grim Necromancer"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42328,
+   "text": "<b>Deathrattle:</b> If it's your opponent's turn, summon an 8/8 Skeleton.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_019.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Skelemancer"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42791,
+   "text": "Spells cost (2) more.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_706.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Nerubian Unraveler"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42446,
+   "text": "<b>Poisonous</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_032.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Venomancer"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45328,
+   "text": "<b>Battlecry:</b> Gain +1/+1 for\u00a0each minion that died\u00a0this turn.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_904.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Wicked Skeleton"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42440,
+   "text": "<b>Battlecry:</b> Give adjacent minions +2 Health.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_028.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Sunborne Val'kyr"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43051,
+   "text": "[x]<b>Deathrattle:</b> Summon a\nminion from your deck\nwith less Attack than\nthis minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_812.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Meat Wagon"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42445,
+   "text": "Whenever this minion takes\ndamage, gain +2 Attack.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_031.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DEFAULT": 0.8
+   },
+   "cardClass": "NEUTRAL",
+   "name": "Night Howler"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "OG",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "<b>Taunt</b>\n<b>Deathrattle:</b> Summon a 2/2 Slime.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/OG_249.png",
+   "dbfId": 38784,
+   "name": "Infested Tauren"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "<b>Battlecry:</b> <b>Freeze</b> a\u00a0character.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/EX1_283.png",
+   "dbfId": 512,
+   "name": "Frost Elemental"
+  },
+  {
+   "rarity": "RARE",
+   "set": "EXPERT1",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "<b>Battlecry:</b> Deal 4 damage to HIMSELF.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/CS2_181.png",
+   "dbfId": 1109,
+   "name": "Injured Blademaster"
+  },
+  {
+   "rarity": "RARE",
+   "set": "NAXX",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "<b>Taunt\nDeathrattle:</b> Summon a 1/2 Slime with <b>Taunt</b>.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/FP1_012.png",
+   "dbfId": 1793,
+   "name": "Sludge Belcher"
+  },
+  {
+   "rarity": "EPIC",
+   "set": "GVG",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "<b>Deathrattle:</b> Summon a random 4-Cost minion.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/GVG_105.png",
+   "dbfId": 2073,
+   "name": "Piloted Sky Golem"
+  },
+  {
+   "rarity": "LEGENDARY",
+   "set": "NAXX",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "At the end of each turn, summon all friendly minions that died this turn.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/FP1_013.png",
+   "dbfId": 1794,
+   "name": "Kel'Thuzad"
+  },
+  {
+   "rarity": "LEGENDARY",
+   "set": "NAXX",
+   "frequency": {
+    "DEFAULT": 0.7
+   },
+   "text": "Your minions trigger their <b>Deathrattles</b> twice.",
+   "cardClass": "NEUTRAL",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/FP1_031.png",
+   "dbfId": 1915,
+   "name": "Baron Rivendare"
+  }
+ ],
+ "DRUID": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 42615,
+   "text": "<b>Choose a Deathrattle (Secretly) -</b> Deal 3 damage to all minions; or Give them +2/+2.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_047.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Fatespinner"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43439,
+   "text": "<b>Deathrattle:</b> Summon your <b>Taunt</b> minions that\ndied this game.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_835.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Hadronox"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43022,
+   "text": "<b>Battlecry:</b> Give your <b>Taunt</b> minions +2/+2.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_807.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Strongshell Scavenger"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42759,
+   "text": "[x]Deal $5 damage. Draw\n5 cards. Gain 5 Armor.\nSummon a 5/5 Ghoul.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_085.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Ultimate Infestation"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42651,
+   "text": "<b>Choose One -</b> Transform into a 1/2 with <b>Poisonous</b>; or a 1/5 with <b>Taunt</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_051.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Druid of the Swarm"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42656,
+   "text": "Summon a 1/5 Scarab with <b>Taunt</b>. If your\u00a0opponent has more minions, cast this again.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_054.png",
+   "rarity": "RARE",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Spreading Plague"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43025,
+   "text": "[x]<b>Taunt</b>\nAfter you summon a minion,\n gain +1 Health.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_808.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Crypt Lord"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42748,
+   "text": "Give your hero +3\u00a0Attack this turn. Gain 3 Armor.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_079.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Gnash"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42649,
+   "text": "Summon two 1/2 <b>Poisonous</b> Spiders.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_050.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Webweave"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43417,
+   "text": "[x]<b>Choose One -</b>\nSummon 2 <b>Poisonous</b>\nSpiders; or 2 Scarabs\nwith <b>Taunt</b>.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_832.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "DRUID": 1.15
+   },
+   "cardClass": "DRUID",
+   "name": "Malfurion the Pestilent"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "EXPERT1",
+   "frequency": {
+    "DRUID": 1.0
+   },
+   "text": "[x]<b>Choose One -</b> Transform\ninto a 4/4 with <b>Charge</b>;\nor a 4/6 with <b>Taunt</b>.",
+   "cardClass": "DRUID",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/EX1_165.png",
+   "dbfId": 692,
+   "name": "Druid of the Claw"
+  }
+ ],
+ "SHAMAN": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 42762,
+   "text": "<b>Taunt</b>\n<b>Freeze</b> any character damaged by this minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_088.png",
+   "rarity": "RARE",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Voodoo Hexxer"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42808,
+   "text": "Destroy any <b>Frozen</b> minion damaged by\u00a0this.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_236.png",
+   "rarity": "RARE",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Ice Breaker"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42750,
+   "text": "<b>Taunt</b>\n<b>Overload</b>: (3)",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_081.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Drakkari Defender"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "CORE",
+   "frequency": {
+    "SHAMAN": 1.0
+   },
+   "text": "Deal $1 damage to an enemy character and <b>Freeze</b> it.",
+   "cardClass": "SHAMAN",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/CS2_037.png",
+   "dbfId": 971,
+   "name": "Frost Shock"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42678,
+   "text": "<b>Battlecry:</b> <b>Freeze</b> an\u00a0enemy.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_058.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Brrrloc"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42765,
+   "text": "Costs (1) less for each Mana Crystal you've <b><b>Overload</b>ed</b> this game.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_090.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Snowfury Giant"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42747,
+   "text": "<b>Freeze</b> a minion and deal $3 damage to adjacent ones.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_078.png",
+   "rarity": "RARE",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Avalanche"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42676,
+   "text": "Give a minion +3/+3 and <b>Freeze</b> it.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_056.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Cryostasis"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42763,
+   "text": "Draw 2 Murlocs from your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_089.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Ice Fishing"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43072,
+   "text": "Whenever another minion is <b>Frozen</b>, add a copy of it to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_289.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Moorabi"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42987,
+   "text": "<b>Battlecry:</b> Transform your minions into random ones that cost (2) more.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_481.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "SHAMAN": 1.15
+   },
+   "cardClass": "SHAMAN",
+   "name": "Thrall, Deathseer"
+  }
+ ],
+ "PRIEST": [
+  {
+   "set": "ICECROWN",
+   "dbfId": 42566,
+   "text": "Copy 3 cards in your opponent's deck and add them to your hand.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_207.png",
+   "rarity": "RARE",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Devour Mind"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42992,
+   "text": "<b>Lifesteal</b>\nDeal $1 damage to\u00a0all\u00a0minions.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_802.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Spirit Lash"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 43408,
+   "text": "<b>Battlecry:</b> Destroy all minions with 5 or more\u00a0Attack.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_830.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Shadowreaper Anduin"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 45308,
+   "text": "[x]Choose an enemy minion.\nAt the start of your turn,\ngain control of it.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_849.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Embrace Darkness"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42574,
+   "text": "[x]At the end of your turn,\ngive another random\nfriendly minion +1/+1.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_210.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Shadow Ascendant"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42596,
+   "text": "<b>Lifesteal</b>",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_212.png",
+   "rarity": "COMMON",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Acolyte of Agony"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42598,
+   "text": "[x]<b>Taunt</b>. <b>Lifesteal</b>.\n <b>Deathrattle:</b> Destroy a\n random enemy minion.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_214.png",
+   "rarity": "EPIC",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Obsidian Statue"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42597,
+   "text": "<b>Discover</b> a friendly minion that died this game. Summon it.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_213.png",
+   "rarity": "RARE",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Eternal Servitude"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42804,
+   "text": "Summon a 5/5 copy of\u00a0a random minion in\u00a0your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_235.png",
+   "rarity": "RARE",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Shadow Essence"
+  },
+  {
+   "set": "ICECROWN",
+   "dbfId": 42633,
+   "text": "<b>Battlecry:</b> Shuffle a copy of\u00a0your opponent's deck into your deck.",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/ICC_215.png",
+   "rarity": "LEGENDARY",
+   "frequency": {
+    "PRIEST": 1.15
+   },
+   "cardClass": "PRIEST",
+   "name": "Archbishop Benedictus"
+  },
+  {
+   "rarity": "COMMON",
+   "set": "NAXX",
+   "frequency": {
+    "PRIEST": 1.0
+   },
+   "text": "<b>Deathrattle:</b> Give a random friendly minion +3 Health.",
+   "cardClass": "PRIEST",
+   "url": "https://cdn.rawgit.com/schmich/hearthstone-card-images/7af5/rel/FP1_023.png",
+   "dbfId": 1807,
+   "name": "Dark Cultist"
+  }
+ ]
+}
