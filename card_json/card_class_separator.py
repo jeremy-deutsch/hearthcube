@@ -27,6 +27,6 @@ for card_class in ['PRIEST', 'MAGE', 'WARLOCK', 'WARRIOR', 'HUNTER', 'PALADIN', 
         new_card['url'] = card['url']
         cube_class[new_card['dbfId']] = new_card
     # Write each class' cube to another file
-    cube_class_file = open('../public/card-json/cards.cube.' + card_class.lower() + '.json', 'w')
+    cube_class_file = open('../api/card-json/cards.cube.' + card_class.lower() + '.json', 'w')
     json.dump(cube_class, cube_class_file)
     cube_class_file.close()

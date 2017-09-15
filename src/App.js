@@ -218,7 +218,7 @@ class App extends Component {
       currentOptions: [],
       heroClass
     });
-    axios.get('/card-json/cards.cube.' + heroClass.toLowerCase() + '.json')
+    axios.get('/api/cards.cube.' + heroClass.toLowerCase() + '.json')
       .then(response => {
         this.allCards = response.data;
         // console.log(response.data);
