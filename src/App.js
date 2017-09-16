@@ -9,6 +9,16 @@ import axios from 'axios';
 import {encode, decode} from "deckstrings"; // encode doesn't work without importing decode, for some reason
 import ClipboardButton from 'react-clipboard.js';
 
+import druidCards from './api/cards.cube.druid.js';
+import shamanCards from './api/cards.cube.shaman.js';
+import rogueCards from './api/cards.cube.rogue.js';
+import hunterCards from './api/cards.cube.hunter.js';
+import warriorCards from './api/cards.cube.warrior.js';
+import paladinCards from './api/cards.cube.paladin.js';
+import mageCards from './api/cards.cube.mage.js';
+import priestCards from './api/cards.cube.priest.js';
+import warlockCards from './api/cards.cube.warlock.js';
+
 const twoPerDeckLimit = true;
 
 const heroes = [
@@ -218,32 +228,43 @@ class App extends Component {
       currentOptions: [],
       heroClass
     });
-    axios.get('/api/cards.cube.' + heroClass.toLowerCase() + '.json')
-      .then(response => {
-        this.allCards = response.data;
+    switch(heroClass) {
+      case "Priest": this.allCards = priestCards; break;
+      case "Warlock": this.allCards = warlockCards; break;
+      case "Mage": this.allCards = mageCards; break;
+      case "Druid": this.allCards = druidCards; break;
+      case "Shaman": this.allCards = shamanCards; break;
+      case "Rogue": this.allCards = rogueCards; break;
+      case "Paladin": this.allCards = paladinCards; break;
+      case "Warrior": this.allCards = warriorCards; break;
+      case "Hunter": this.allCards = hunterCards; break;
+    }
+    // Axios would be nice, but there isn't a backend yet
+    // axios.get('./api/cards.cube.' + heroClass.toLowerCase() + '.json')
+    //   .then(response => {
+    //     this.allCards = response.data;
         // console.log(response.data);
-        for (let dbfId in response.data) {
-          const ticketsToAdd = Math.floor(response.data[dbfId].frequency * 20);
-          const rarity = response.data[dbfId].rarity;
-          for (let i = 0; i < ticketsToAdd; i++) {
-            this.lottery[rarity].push(dbfId);
-          }
-        }
-        // console.log(this.lottery);
-        for (let rarity in this.lottery) {
-          shuffleArray(this.lottery[rarity]);
-        }
-        this.setState({step: "cards"});
-        this.loadNewThree();
-      })
-      .catch(error => {
-        console.error("Could not retrieve the " + heroClass + " cards: " + error);
-      });
+    for (let dbfId in this.allCards) {
+      const ticketsToAdd = Math.floor(this.allCards[dbfId].frequency * 20);
+      const rarity = this.allCards[dbfId].rarity;
+      for (let i = 0; i < ticketsToAdd; i++) {
+        this.lottery[rarity].push(dbfId);
+      }
+    }
+    // console.log(this.lottery);
+    for (let rarity in this.lottery) {
+      shuffleArray(this.lottery[rarity]);
+    }
+    this.setState({step: "cards"});
+    this.loadNewThree();
+      // })
+      // .catch(error => {
+      //   console.error("Could not retrieve the " + heroClass + " cards: " + error);
+      // });
   }
 
   loadNewThree() {
     this.setState({currentOptions: []});
-    let newOptions = [];
 
     let rarityRand = Math.random();
     let rarity = "";
@@ -276,19 +297,25 @@ class App extends Component {
       rarity = "LEGENDARY";
     }
 
-    while (newOptions.length < 3) {
+    let newOptions = {};
+
+    // let timesSearched = 0;
+    while (Object.keys(newOptions).length < 3) {
+      // if (timesSearched >= 3) {
+      //   console.log("Dug " + timesSearched + " deep");
+      // }
       let possibleOption = this.allCards[this.lottery[rarity].pop()];
-      if (!(possibleOption in newOptions) && 
+      if (!(possibleOption.dbfId in newOptions) && 
         (!(possibleOption.dbfId in this.decklistDbfIds) || 
         (rarity !== "LEGENDARY" && this.decklistDbfIds[possibleOption.dbfId] < 2) || 
         !twoPerDeckLimit)) {
-        newOptions.push(possibleOption);
+        newOptions[possibleOption.dbfId] = possibleOption;
       }
     }
 
     this.setState({
       thinking: false,
-      currentOptions: newOptions
+      currentOptions: Object.values(newOptions)
     });
   }
 
@@ -316,7 +343,7 @@ class App extends Component {
       heroes: [this.heroDbfId],
       format: 1
     }
-    console.log(deck);
+    // console.log(deck);
     const finalDeckstring = encode(deck);
     this.setState({finalDeckstring});
   }
