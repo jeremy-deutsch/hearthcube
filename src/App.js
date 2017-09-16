@@ -273,14 +273,14 @@ class App extends Component {
       // console.log("Legend pick!");
       commonChance = 0;
       rareChance = 0;
-      epicChance = 0.5;
-      legendChance = 0.5;
+      epicChance = 0.6;
+      legendChance = 0.4;
     } else if (this.deckSize === 9 || this.deckSize === 19 || this.deckSize === 29) {
       // console.log("Rare pick!");
       commonChance = 0;
-      rareChance = 0.4;
-      epicChance = 0.4;
-      legendChance = 0.2;
+      rareChance = 0.5;
+      epicChance = 0.35;
+      legendChance = 0.15;
     } else {
       commonChance = 0.65;
       rareChance = 0.22;
