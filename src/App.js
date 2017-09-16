@@ -352,13 +352,16 @@ class App extends Component {
     switch(this.state.step) {
       case "start": {
         return (
-          <button
-            onClick={() => {
-              this.loadThreeHeroes();
-            }}
-          >
-            Start
-          </button>
+          <div className = "App">
+            <button
+              onClick={() => {
+                this.loadThreeHeroes();
+              }}
+            >
+              Start
+            </button>
+            <p>Card data, images, and deckstring generator provided by <a href="https://hearthsim.info" target="_blank">HearthSim</a>.</p>
+          </div>
         );
       }
       case "hero": {
@@ -382,11 +385,11 @@ class App extends Component {
             />
             :
             <div>
-              Congrats on your deck!
+              Congrats on your deck! &nbsp;
               <ClipboardButton data-clipboard-text={this.state.finalDeckstring}>
                 Copy deck to clipboard
               </ClipboardButton>
-              <button>Restart</button>
+              {/* <button>Restart</button> */}
             </div>
             }
             <Decklist 
